@@ -86,13 +86,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="关于重绘和回流以及如何避免"><a href="#关于重绘和回流以及如何避免" class="headerlink" title="关于重绘和回流以及如何避免"></a>关于重绘和回流以及如何避免</h2><p><strong>重绘</strong>（repaint）：渲染树（Render Tree，由DOM树和CSSOM树合并而成）节点改变，但不影响该节点在页面当中的空间位置及大小。譬如某个div标签节点的背景颜色、字体颜色等等发生改变，但是该div标签节点的宽、高、内外边距并不发生变化，此时触发浏览器重绘。</p>
+<p><strong>回流</strong>，也叫做重排（reflow）：和前者不同的是，在渲染树节点发生改变，影响了节点几何属性，导致节点位置发生变化，此时触发浏览器回流，重新生成渲染树。</p>
+<h4 id="如何避免"><a href="#如何避免" class="headerlink" title="如何避免"></a>如何避免</h4><p>Reflow会导致子节点、父节点和兄弟节点的Reflow。追根溯源，还是从渲染树方面着手优化，减少对渲染树的操作，减少对信息的不断请求。</p>
+<p>1.离线处理操作元素</p>
+<p>用display:none 隐藏元素，然后对该元素进行所有的操作，最后再显示出来。利用display:none进行元素操作不影响回流和重绘。</p>
+<p>2.使用absolute location（一个老概念了，不知道有没有新方法）</p>
+<p>用绝对定位让它脱离文档流</p>
+<p>3.避免触发同步布局事件</p>
+<p>定义出嵌套在循环里的属性，通过跳出循环，减少浏览器的强制清空队列操作</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://inahoe.github.io/2022/05/28/repaint-reflow/" data-id="cl3p8zyey0000y8vpcou43duf" class="article-share-link">Share</a>
+      <a data-url="http://inahoe.github.io/2022/05/28/repaint-reflow/" data-id="cl3pcy2ze00010wvpg1xr187y" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web/" rel="tag">Web</a></li></ul>
+
     </footer>
   </div>
   
@@ -141,7 +152,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://inahoe.github.io/2022/04/25/seesharp/" data-id="cl2eeg7xd0001i8vpao5q2g9h" class="article-share-link">Share</a>
+      <a data-url="http://inahoe.github.io/2022/04/25/seesharp/" data-id="cl3pcy2zg00030wvp9js0ghuh" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C#</a></li></ul>
@@ -194,7 +205,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://inahoe.github.io/2022/04/03/test/" data-id="cl2eeg7xg0003i8vpcavfc21o" class="article-share-link">Share</a>
+      <a data-url="http://inahoe.github.io/2022/04/03/test/" data-id="cl3pcy2zh00040wvpbwn22g5p" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%87%8E%E7%94%9F%E6%8A%80%E8%83%BD/" rel="tag">野生技能</a></li></ul>
@@ -259,7 +270,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://inahoe.github.io/2022/02/28/githubusing/" data-id="cl2eeg7x80000i8vpevobh1y0" class="article-share-link">Share</a>
+      <a data-url="http://inahoe.github.io/2022/02/28/githubusing/" data-id="cl3pcy2za00000wvphh4s7xp7" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%87%8E%E7%94%9F%E6%8A%80%E8%83%BD/" rel="tag">野生技能</a></li></ul>
@@ -284,7 +295,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C#</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%87%8E%E7%94%9F%E6%8A%80%E8%83%BD/" rel="tag">野生技能</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C#</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Web/" rel="tag">Web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%87%8E%E7%94%9F%E6%8A%80%E8%83%BD/" rel="tag">野生技能</a></li></ul>
     </div>
   </div>
 
@@ -294,7 +305,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/C/" style="font-size: 10px;">C#</a> <a href="/tags/%E9%87%8E%E7%94%9F%E6%8A%80%E8%83%BD/" style="font-size: 20px;">野生技能</a>
+      <a href="/tags/C/" style="font-size: 10px;">C#</a> <a href="/tags/Web/" style="font-size: 10px;">Web</a> <a href="/tags/%E9%87%8E%E7%94%9F%E6%8A%80%E8%83%BD/" style="font-size: 20px;">野生技能</a>
     </div>
   </div>
 
