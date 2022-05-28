@@ -5,15 +5,27 @@
   
 
   
-  <title>Inaho的个人博客</title>
+  <title>cesiumjs-3d-tiles-styling | Inaho的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Inaho的个人博客">
-<meta property="og:url" content="http://inahoe.github.io/index.html">
+  <meta name="description" content="六级擦线、英二62分的翻译苦手 磁贴的样式语言3D 切片样式语言允许您定义数据集中要素的显示方式的规则，例如建筑物的颜色或显示的建筑物类型。这有助于识别城市中的模式或创建信息更丰富的可视化。 样式是使用 JSON 和 JavaScript 表达式定义的。此外，样式语言还提供了一组支持常见数学运算的样式，例如 、 和 。built-in functions &#96;&#96;min&#96;&#96;distance&#96;&#96;log">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cesiumjs-3d-tiles-styling">
+<meta property="og:url" content="http://inahoe.github.io/2022/05/28/cesiumjs-3d-tiles-styling/index.html">
 <meta property="og:site_name" content="Inaho的个人博客">
+<meta property="og:description" content="六级擦线、英二62分的翻译苦手 磁贴的样式语言3D 切片样式语言允许您定义数据集中要素的显示方式的规则，例如建筑物的颜色或显示的建筑物类型。这有助于识别城市中的模式或创建信息更丰富的可视化。 样式是使用 JSON 和 JavaScript 表达式定义的。此外，样式语言还提供了一组支持常见数学运算的样式，例如 、 和 。built-in functions &#96;&#96;min&#96;&#96;distance&#96;&#96;log">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://images.prismic.io/cesium/tutorials-3d-tiles-styling-nameAttribute.jpg?auto=compress,format&w=1040">
+<meta property="og:image" content="https://images.prismic.io/cesium/tutorials-3d-tiles-styling-showAllBuildings.jpg?auto=compress,format&w=1040">
+<meta property="og:image" content="https://images.prismic.io/cesium/tutorials-3d-tiles-styling-showOnlyResidentialBuildings.jpg?auto=compress,format&w=1040">
+<meta property="og:image" content="https://images.prismic.io/cesium/tutorials-3d-tiles-styling-osmBuildingColorByDistance.jpg?auto=compress,format&w=1040">
+<meta property="og:image" content="https://images.prismic.io/cesium/tutorials-3d-tiles-styling-bioMuseumMontrealPointCloudClassified.jpg?auto=compress,format&w=1320">
+<meta property="og:image" content="https://images.prismic.io/cesium/tutorials-3d-tiles-styling-ionStyleEditor.gif?auto=compress,format&w=1320">
+<meta property="article:published_time" content="2022-05-28T06:38:57.000Z">
+<meta property="article:modified_time" content="2022-05-28T06:46:59.687Z">
 <meta property="article:author" content="Inaho">
+<meta property="article:tag" content="Cesium">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://images.prismic.io/cesium/tutorials-3d-tiles-styling-nameAttribute.jpg?auto=compress,format&w=1040">
   
     <link rel="alternate" href="/atom.xml" title="Inaho的个人博客" type="application/atom+xml">
   
@@ -62,9 +74,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-cesiumjs-3d-tiles-styling" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-cesiumjs-3d-tiles-styling" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2022/05/28/cesiumjs-3d-tiles-styling/" class="article-date">
   <time datetime="2022-05-28T06:38:57.000Z" itemprop="datePublished">2022-05-28</time>
@@ -77,8 +87,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/05/28/cesiumjs-3d-tiles-styling/">cesiumjs-3d-tiles-styling</a>
+    <h1 class="article-title" itemprop="name">
+      cesiumjs-3d-tiles-styling
     </h1>
   
 
@@ -172,229 +182,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-repaint-reflow" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/05/28/repaint-reflow/" class="article-date">
-  <time datetime="2022-05-28T02:21:52.000Z" itemprop="datePublished">2022-05-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/05/28/repaint-reflow/">repaint&amp;reflow</a>
-    </h1>
+    <a href="/2022/05/28/repaint-reflow/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">repaint&amp;reflow</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="关于重绘和回流以及如何避免"><a href="#关于重绘和回流以及如何避免" class="headerlink" title="关于重绘和回流以及如何避免"></a>关于重绘和回流以及如何避免</h2><p><strong>重绘</strong>（repaint）：渲染树（Render Tree，由DOM树和CSSOM树合并而成）节点改变，但不影响该节点在页面当中的空间位置及大小。譬如某个div标签节点的背景颜色、字体颜色等等发生改变，但是该div标签节点的宽、高、内外边距并不发生变化，此时触发浏览器重绘。</p>
-<p><strong>回流</strong>，也叫做重排（reflow）：和前者不同的是，在渲染树节点发生改变，影响了节点几何属性，导致节点位置发生变化，此时触发浏览器回流，重新生成渲染树。</p>
-<h4 id="如何避免"><a href="#如何避免" class="headerlink" title="如何避免"></a>如何避免</h4><p>Reflow会导致子节点、父节点和兄弟节点的Reflow。追根溯源，还是从渲染树方面着手优化，减少对渲染树的操作，减少对信息的不断请求。</p>
-<p>1.离线处理操作元素</p>
-<p>用display:none 隐藏元素，然后对该元素进行所有的操作，最后再显示出来。利用display:none进行元素操作不影响回流和重绘。</p>
-<p>2.使用absolute location（一个老概念了，不知道有没有新方法）</p>
-<p>用绝对定位让它脱离文档流</p>
-<p>3.避免触发同步布局事件</p>
-<p>定义出嵌套在循环里的属性，通过跳出循环，减少浏览器的强制清空队列操作</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://inahoe.github.io/2022/05/28/repaint-reflow/" data-id="cl3pcy2ze00010wvpg1xr187y" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web/" rel="tag">Web</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-seesharp" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/04/25/seesharp/" class="article-date">
-  <time datetime="2022-04-25T06:08:56.000Z" itemprop="datePublished">2022-04-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/04/25/seesharp/">C# guide(一)</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>通过文档中梳理的内容，逐步在.NET平台上编写应用程序，这个title将以数篇文章来展开。</p>
-<h2 id="说两句关于C-语言"><a href="#说两句关于C-语言" class="headerlink" title="说两句关于C#语言"></a>说两句关于C#语言</h2><p>C#是微软公司发布的一种面向对象、面向组件的、运行于.NET Core(开源、跨平台)和.NET Framework的高级程序设计语言。</p>
-<p>由C、C++衍生、继承前者强大功能的同时、去掉一些复杂特性。</p>
-<h4 id="简单谈一下C-语言的特点："><a href="#简单谈一下C-语言的特点：" class="headerlink" title="简单谈一下C#语言的特点："></a>简单谈一下C#语言的特点：</h4><p>1 不允许直接操作内存，去掉了指针操作</p>
-<p>2 C#具有面向对象语言所应有的一切特性：封装、继承、多态（这三个特性后期我会加超链接跳到指定章节）</p>
-<p>3 C#支持大多数Web标准</p>
-<p>4 安全性 由.NET提供的垃圾回收</p>
-<p>5 兼容性 C#遵循.NET的公共语言规范CLS</p>
-<p>6 内置版本控制功能</p>
-<p>7 异常处理机制</p>
-<h2 id="浅谈-NET-Framework-NET-Core"><a href="#浅谈-NET-Framework-NET-Core" class="headerlink" title="浅谈.NET Framework/.NET Core"></a>浅谈.NET Framework/.NET Core</h2><p>这种小标题内容也属于是挖新坑了，不过在这就先说几句。</p>
-<p>.NET Framework是微软推出的软件开发/运行平台。其主要组件 包括CLR 和 类库。</p>
-<p>CLR解决了很多传统问题（</p>
-<p>类库比较好理解了，你的工具箱里有扳手、螺丝刀啊等等，按照你的需要去引用。比如 File IO类</p>
-<p>.NET Core是开源的软件框架，而且是跨平台的，非常期待.NET Core的未来，相比于.NET Framework而言。 </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://inahoe.github.io/2022/04/25/seesharp/" data-id="cl3pcy2zg00030wvp9js0ghuh" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C#</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/04/03/test/" class="article-date">
-  <time datetime="2022-04-03T06:46:10.000Z" itemprop="datePublished">2022-04-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/04/03/test/">关于发布</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id=""><a href="#" class="headerlink" title=""></a></h4><p>1 blog目录下进入Git Bash命令窗口，输入hexo new “$^(&amp;%$#)”</p>
-<p>2 文件生成在source/_posts下</p>
-<p>3 添加阅读全文按钮：《!–more–》   （注：这里是两个短-，部署完后我看这里显示成了一横杠，一横杠不会生效的）</p>
-<p>上面把《 改成 &lt; 即用  ，》同理 。我这里是避免阅读全文按钮在这篇里生效</p>
-<p>法二：theme配置文件中，auto_excerpt里修改 enable改成true ，length是摘要长度</p>
-<p>4 图片引用 </p>
-<p>先安装插件 npm install hexo-asset-image –save</p>
-<p>source同级目录下会有一个img文件夹</p>
-<p>在.md文件中引用图片如下</p>
-<p>![header](img/header.jpg  </p>
-<p>在jpg后面补个)就能引用了 ，对，我还是为了避免在本篇生效这个引用，好家伙，我在.md文件里写东西，想描述一个引用，可是这个引用本身是立即生效的，甚至我故意漏打它还会补全并且生效（过分温柔</p>
-<p>生效就是它去引用目录中的图片了，如果没有load到图就会显示一个破损的图。</p>
-<p>5   3和4都是用markdown语法的，怎么让引用在语法下不生效暂时还不知道（什么gui问题啊</p>
-<p>6 本地测试 启动服务器 hexo s</p>
-<p>然后在Git bash命令窗口下使用御三家 hexo clean hexo g hexo d</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://inahoe.github.io/2022/04/03/test/" data-id="cl3pcy2zh00040wvpbwn22g5p" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%87%8E%E7%94%9F%E6%8A%80%E8%83%BD/" rel="tag">野生技能</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-githubusing" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/02/28/githubusing/" class="article-date">
-  <time datetime="2022-02-28T05:33:04.000Z" itemprop="datePublished">2022-02-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/02/28/githubusing/">Visual Studio 2019如何使用GitHub</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>的确还有其他部署项目的方法，这里呢根据个人学习应用需求选用VS 2019扩展插件进行仓库的同步</p>
-<p>在VS2019的顶部菜单栏》扩展》管理扩展》GitHub Extension for VS（这个插件一般在检索之后的初始界面就有啊）</p>
-<img src="/2022/02/28/githubusing/image-20220221225805162.png" class="" title="image-20220221225805162">
-
-<p>Ps:这个扩展可能是从外网地址拉的，有梯子上梯子，没梯子找国内镜像吧（我真妹有，不然就贴地址给你了）啥也没有就慢慢等</p>
-<p>下载完之后把VS退了重新打开，会弹出一个license，点Modify就行</p>
-<p>重新打开VS之后，打开团队资源管理器，连接GitHub</p>
-<img src="/2022/02/28/githubusing/image-20220228112212048.png" class="" title="image-20220228112212048">
-
-<p>我这里是vs 2019，这个本地Git功能移动有点不友好。点击连接，我用的是浏览器登录github，也是一个授权的步骤</p>
-<img src="/2022/02/28/githubusing/image-20220228112316132.png" class="" title="image-20220228112316132">
-
-<p>点主页可以看到已经连好了，这个叫test的repo是之前new的不用管它，</p>
-<img src="/2022/02/28/githubusing/image-20220228112437143.png" class="" title="image-20220228112437143">
-
-<p>点击管理连接（绿色小插头）</p>
-<img src="/2022/02/28/githubusing/image-20220228112616592.png" class="" title="image-20220228112616592">
-
-<p>创建一个存储库</p>
-<img src="/2022/02/28/githubusing/image-20220228112646784.png" class="" title="image-20220228112646784">
-
-<p>这里就创好了</p>
-<img src="/2022/02/28/githubusing/image-20220228112903723.png" class="" title="image-20220228112903723">
-
-<p>同时，如果你需要新建一些Web项目，也是通过初始化存储库，然后同步、推送</p>
-<img src="/2022/02/28/githubusing/image-20220228131959368.png" class="" title="image-20220228131959368">
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://inahoe.github.io/2022/02/28/githubusing/" data-id="cl3pcy2za00000wvphh4s7xp7" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%87%8E%E7%94%9F%E6%8A%80%E8%83%BD/" rel="tag">野生技能</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
