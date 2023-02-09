@@ -64,6 +64,42 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-HTML" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2023/02/09/HTML/" class="article-date">
+  <time datetime="2023-02-09T06:40:01.000Z" itemprop="datePublished">2023-02-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/02/09/HTML/">HTML</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://inahoe.github.io/2023/02/09/HTML/" data-id="cldwqd6ib00005wvpbf039rmm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-VS-Code" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2023/02/06/VS-Code/" class="article-date">
@@ -86,11 +122,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>好用！伟大的文本编辑器！（雾</p>
-<p>今后如果跳槽前端的话，VS code基本是主力开发工具了</p>
+        <h3 id="好用！伟大的文本编辑器！（雾"><a href="#好用！伟大的文本编辑器！（雾" class="headerlink" title="好用！伟大的文本编辑器！（雾"></a>好用！伟大的文本编辑器！（雾</h3><p>今后如果跳槽前端的话，VS code基本是主力开发工具了</p>
 <p>就其特点来说，开源、free、Cross-platform（多平台下一致的交互体验）、高性能、轻量化（cue的就是eclipse那种IDE，相对笨重一些。</p>
-<p>上一次舔微软已经是地平线5发布的时候了，今天呢无疑要叨上几句关于VS code</p>
-<p>它的理念，版本迭代、公测计划、extension，它的生态 （国内我常看的就是新兴的掘金社区了），它自带的调试工具以及Git版本控制，强大的插件扩展（直接在VS Code里面搜索就行了，比如简中化Chinese extension），它的emmet，语法支持高亮 括号匹配 代码段提示 ，最近一个版本还更新了分块化代码（我以前都是插一句注释方便“回档”）</p>
+<h5 id="上一次舔微软已经是地平线5发布的时候了，今天呢无疑要叨上几句关于VS-code"><a href="#上一次舔微软已经是地平线5发布的时候了，今天呢无疑要叨上几句关于VS-code" class="headerlink" title="上一次舔微软已经是地平线5发布的时候了，今天呢无疑要叨上几句关于VS code"></a>上一次舔微软已经是地平线5发布的时候了，今天呢无疑要叨上几句关于VS code</h5><p>它的理念，版本迭代、公测计划、extension，它的生态 （国内我常看的就是新兴的掘金社区了），它自带的调试工具以及Git版本控制，强大的插件扩展（直接在VS Code里面搜索就行了，比如简中化Chinese extension），它的emmet，语法支持高亮 括号匹配 代码段提示 ，最近一个版本还更新了分块化代码（我以前都是插一句注释方便“回档”）</p>
+<hr>
+<h3 id="浅聊一下VS-Code的组件（可跳过"><a href="#浅聊一下VS-Code的组件（可跳过" class="headerlink" title="浅聊一下VS Code的组件（可跳过"></a>浅聊一下VS Code的组件（可跳过</h3><h4 id="开发框架"><a href="#开发框架" class="headerlink" title="开发框架"></a>开发框架</h4><p>VS Code的开发框架选了Electron，没有上Qt，以至性能方面受限，微软也花了很多心思用C++去优化性能。下面是个人的一些近乎揣测的观点，微软选Electron有他更深刻的缘由，所以这里咱步子不妨迈小一点</p>
+<p>我们需要明白一个道理，硬件固然重要，你有硬件，软件稀烂那是要吃大亏的，所以搞清楚自身定位，明确开发应用场景比较重要（我怎么像是在说任天堂，好在老任现在很清楚定位</p>
+<h5 id="跨平台相关"><a href="#跨平台相关" class="headerlink" title="跨平台相关"></a>跨平台相关</h5><p>Electron的优势，微软在做长期规划中必然是考虑到了，譬如我工厂生产一口华夫饼机，我是不是应该让机器具备跨人群的特性，家庭用、商用，工业风也好 美丽的皮囊也好，所以图一个适用性。Qt在MacOS上的支持不太好，自然会选择用Electron</p>
+<h5 id="易用性"><a href="#易用性" class="headerlink" title="易用性"></a>易用性</h5><p>Qt用C++ 、QML，较为底层，和系统打交道，适用于一些复杂系统，比如wps那种，以及军工系统。Electron用Html、CSS,JavaScript以及其他Web开发技术，上手比较快，开发一些大小适中的应用，在避免性能问题的情况下推进新项目比较方便。</p>
+<h5 id="快速迭代"><a href="#快速迭代" class="headerlink" title="快速迭代"></a>快速迭代</h5><p>Electron的开发周期要短于Qt不少的，包括及时地修改和部署</p>
+<h5 id="社区支持"><a href="#社区支持" class="headerlink" title="社区支持"></a>社区支持</h5><p>社群生态太重要了，难道你吃螃蟹不蘸醋？</p>
+<h4 id="LSP"><a href="#LSP" class="headerlink" title="LSP"></a>LSP</h4><p>语言服务协议同样是VS Code的核心组件了，解释权交给微软（逃</p>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/visualstudio/extensibility/language-server-protocol?view=vs-2022">语言服务器协议概述 - Visual Studio (Windows) | Microsoft Learn</a></p>
+<hr>
+<p>关于VS Code就赘述这些吧，不想baba了</p>
 
       
     </div>
@@ -428,6 +473,10 @@
       <ul>
         
           <li>
+            <a href="/2023/02/09/HTML/">HTML</a>
+          </li>
+        
+          <li>
             <a href="/2023/02/06/VS-Code/">VS Code</a>
           </li>
         
@@ -441,10 +490,6 @@
         
           <li>
             <a href="/2022/04/03/test/">关于发布</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/28/githubusing/">Visual Studio 2019如何使用GitHub</a>
           </li>
         
       </ul>
